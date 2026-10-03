@@ -3,7 +3,7 @@ MANPREFIX ?= $(PREFIX)/share/man
 CC ?= cc
 
 output: someblocks.c blocks.def.h blocks.h
-	${CC}  someblocks.c $(LDFLAGS) -o someblocks
+	${CC} someblocks.c $(LDFLAGS) -o someblocks
 blocks.h:
 	cp blocks.def.h $@
 
